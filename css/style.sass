@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap')
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: none
+    border: none
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+    margin: 0
+
+a
+    text-decoration: none
+
+
+ul 
+    list-style: none
+    padding: 0
+    margin: 0
+
+
+li 
+    margin: 0
+    padding: 0
+
+
+p 
+    padding: 0
+
+body 
+    background: #F8F8F8
+    overflow-x: hidden
+    &.active
+        overflow-y: hidden !important
+
+    .header 
+        padding-top: 38px
+        padding-bottom: 28px
+
+        .header-container 
+            .header-row 
+                display: flex
+                align-items: center
+
+                .h-col 
+                    .header-left 
+                        a 
+                            display: flex
+                            width: max-content
+                            align-items: center
+                            font-family: 'Poppins', sans-serif
+                            color: #261D31
+                            font-size: 27px
+                            font-weight: bold
+
+                            img 
+                                margin-right: 9px
+                            
+                        
+                    
+
+                    .header-right 
+                        display: flex
+                        justify-content: flex-end
+
+                        .nav-list 
+                            display: flex
+                            align-items: center
+
+                            li 
+                                padding-bottom: 15px
+                                padding-top: 13px
+                                padding-right: 29px
+                                padding-left: 26px
+                                background: #FFFFFF
+                                margin-right: 10px
+                                white-space: nowrap
+
+                                a 
+                                    font-family: 'Poppins', sans-serif
+                                    color: #261D31
+                                    font-weight: bold
+                                    svg 
+                                        margin-right: 10px
+                                    
+                                
+
+                                &:last-child 
+                                    margin-right: 0
+                                
+    .shopping-header 
+        padding-top: 21px
+
+        .shop-container 
+            display: flex
+            justify-content: center
+
+            .shop-row 
+                .shop-col 
+                    ul 
+                        li 
+                            a 
+                                font-family: 'Poppins', sans-serif
+                                font-weight: bold
+                                color: #261D31
+                                font-size: 18px
+                            
+    main 
+        #banner 
+        
+            .banner-container 
+                .swiper 
+                    .swiper-wrapper 
+                        padding-bottom: 60px
+
+                        .swiper-slide 
+                            img 
+                                width: 100%
+                            
+                        
+                    
+
+                    .swiper-pagination-bullet-active 
+                        background: #E7014B !important
+                        width: 14px
+                        height: 14px
+                    
+
+                    .swiper-horizontal>.swiper-pagination-bullets,
+                    .swiper-pagination-bullets.swiper-pagination-horizontal,
+                    .swiper-pagination-custom,
+                    .swiper-pagination-fraction 
+                        left: 50% !important
+                        transform: translateX(-50%)
+                    
+                    .swiper-pagination 
+                        background: #fff
+                        padding: 2px 6px
+                        border-radius: 5px
+                        width: max-content !important
+                    
+
+                    .swiper-pagination-bullet 
+                        width: 14px
+                        height: 14px
+                        background: rgb(182, 181, 181)
+                    
+        .category-article 
+            margin-top: 30px
+            margin-bottom: 26px
+
+            .container 
+                .category-title 
+                    color: #261D31
+                    font-size: 24px
+                    font-weight: bold
+                    font-family: 'Poppins', sans-serif
+                
+        #category 
+            .container 
+                .swiper 
+                    .swiper-wrapper 
+                        display: flex
+                        align-items: center
+
+                        .swiper-slide 
+                            width: max-content !important
+
+                            .nav-list 
+
+                                a 
+                                    font-size: 18px
+                                    font-family: 'Poppins', sans-serif
+                                    font-weight: 600
+                                    color: #261D31
+                                
+
+                                .active 
+                                    color: #E7014B
+
+                                    &:after 
+                                        position: absolute
+                                        bottom: 0
+                                        left: 45px
+                                        width: 27px
+                                        height: 2px
+                                        background: #E7014B
+                                        content: ""
+                         
+        .trend-article 
+            margin-top: 31px
+            margin-bottom: 28px
+
+            .container 
+                .trend-title 
+                    color: #261D31
+                    font-size: 24px
+                    font-weight: bold
+                    font-family: 'Poppins', sans-serif
+                
+        #trend 
+            .trend-container
+                .shop-title
+                    text-align: center
+                    margin-top: 24px
+                    font-family: 'Poppins', sans-serif
+                    font-weight: bold
+                    margin-bottom: 12px
+
+                .trend-row 
+                    .trend-col 
+                        .trend-item 
+                            background: #fff
+                            display: flex
+                            align-items: center
+                            padding-left: 24px
+                            padding-top: 15px
+                            padding-bottom: 17px
+                            margin-bottom: 10px
+                            border-radius: 5px
+                            cursor: pointer
+
+                            div 
+                                &:first-child 
+                                    img 
+                                        width: 157px
+                                        height: 158px
+                                    
+                            div 
+                                &:last-child 
+                                    margin-left: 19px
+                                    display: flex
+                                    flex-direction: column
+
+                                    .img-title 
+                                        font-weight: bold
+                                        font-family: 'Poppins', sans-serif
+                                        color: #261D31
+
+                                    .trend-number 
+                                        font-size: 19px
+                                        margin: 3px 0
+                                        color: #DDDCDE
+                                        font-family: 'Poppins', sans-serif
+                                    
+                                    .trend-money 
+                                        color: #E7014B
+                                        font-size: 19px
+                                        font-family: 'Poppins', sans-serif
+                                        font-weight: bold
+                                                     
+        .modal 
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            visibility: hidden
+            opacity: 0
+            position: fixed
+            background: rgba(0, 0, 0, 0.3)
+            top: 50%
+            z-index: 10
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: 400ms all
+
+            &.active 
+                visibility: visible
+                opacity: 1
+                transition: 400ms all
+            
+
+            .modal-container 
+                width: 450px
+                background: #fff
+                border-radius: 10px
+
+                .modal-header 
+                    button 
+                        border: none
+                        background: transparent
+                        color: #261D31
+                        font-family: 'Poppins', sans-serif
+                        font-weight: bold
+
+                        svg 
+                            margin-right: 7px
+                        
+                    
+                
+
+                .modal-top 
+                    position: relative
+                    .div-abs 
+                        position: absolute
+                        top: 12px
+                        right: 12px
+
+                        span 
+                            font-family: 'Poppins', sans-serif
+                            border-radius: 5px
+                            background: #F8F8F9
+                            padding: 6px 12px
+                            display: block
+                            font-weight: 500
+                        
+
+                    
+
+                    .modal-text 
+                        position: absolute
+                        bottom: 0
+                        left: 21px
+
+                        p
+                            font-family: 'Poppins', sans-serif
+                            font-weight: bold
+                            color: #FFFFFF
+                            font-size: 20px
+                        
+                    
+                
+                .modal-bottom 
+                    padding-top: 11px
+                    padding-left: 18px
+                    padding-right: 16px
+
+                    h5 
+                        font-family: 'Poppins', sans-serif
+                        font-weight: bold
+                        font-size: 16px
+                    
+
+                    p 
+                        padding: 4px 0
+                        color: #DDDCDE
+                        margin-bottom: 0
+                        font-family: 'Poppins', sans-serif
+                        font-size: 16px
+                    
+
+                    .modal-size 
+                        h5 
+                            margin-bottom: 5px
+                        
+
+                        ul 
+                            display: flex
+                            justify-content: space-between
+
+                            li 
+                                button 
+                                    font-family: 'Poppins', sans-serif
+                                    font-weight: 500
+                                    background: #F8F8F9
+                                    border-radius: 5px
+                                    padding: 8px 33px
+
+                                    &.active 
+                                        background: #E7014B
+                                        color: #fff
+                                    
+
+                                
+                            
+                        
+                    
+
+                    .extra 
+                        h5 
+                            margin-top: 14px
+                            margin-bottom: 5px
+
+                        
+
+                        .input-check 
+                            display: flex
+                            flex-direction: column
+
+                            .checkbox 
+                                margin-bottom: 5px
+                                display: flex
+                                align-items: center
+                                font-size: 2rem
+                                cursor: pointer
+                                font-size: 17px
+                                font-family: 'Poppins', sans-serif
+                                font-weight: 500
+                                color: #261D31
+                                font-size: 15px
+
+                                input 
+                                    display: none
+
+                                    &:checked~.checkbox__mark svg 
+                                        opacity: 1
+
+                                    
+                                
+
+                                .checkbox__mark 
+                                    margin-right: 0.5rem
+                                    position: relative
+                                    width: 18px
+                                    height: 18px
+                                    border-radius: 5px
+                                    background: #F8F8F9
+                                    border: 1px solid #E5E5E8
+
+                                    svg 
+                                        position: absolute
+                                        top: 50%
+                                        left: 50%
+                                        transform: translate(-50%, -50%) scale(0.5)
+                                        font-size: 20px !important
+                                        height: auto
+                                        transition: all ease 0.2s
+                                        opacity: 0
+                                        width: 125% !important
+                                        fill: #E7014B
+
+                                    
+                                
+                            
+
+                        
+                    
+
+                    .qty 
+                        display: flex
+                        align-items: flex-end
+
+                        h4 
+                            margin-top: 16px
+                            font-family: 'Poppins', sans-serif
+                            font-weight: bold
+                            font-size: 17px
+                        
+
+                        .input-number 
+                            background: #F8F8F9
+                            display: flex
+                            padding: 5px 5px
+                            position: relative
+                            top: 5px
+                            border-radius: 5px
+                            align-items: flex-end
+                            margin-left: 8px
+
+
+                            input[type="number"]::-webkit-inner-spin-button 
+                                appearance: none !important
+                            
+
+                            input[type="number"] 
+                                appearance: textfield
+                                text-align: center
+                                width: 30px
+                                height: 20px
+                                background: transparent
+                                font-family: 'Poppins', sans-serif
+                                font-weight: bold
+                            
+
+                            button 
+                                font-family: 'Poppins', sans-serif
+                                font-weight: bold
+                                background: #fff
+                                height: 20px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                width: 20px
+                                border-radius: 5px
+                            
+                        
+                    
+
+                    .modal-btn 
+                        padding-bottom: 21px
+                        margin-top: 28px
+
+                        button 
+                            border-radius: 5px
+                            font-family: 'Poppins', sans-serif
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            background: #E7014B
+                            width: 100%
+                            padding: 16px 0
+                            color: #fff
+                            font-weight: bold
+
+                            svg 
+                                margin-right: 7px
+                            
+        #payment 
+            .payment-container 
+                .payment-title 
+                    text-align: center
+                    margin-top: 19px
+                    font-family: 'Poppins', sans-serif
+                    font-weight: bold
+                    margin-bottom: 9px
+                
+
+                .payment-col 
+                    .payment-item 
+                        background: #fff
+                        border-radius: 5px
+                        padding: 1px 0
+                        padding-bottom: 9px
+
+                        .payment-bg 
+                            background: #F8F8F9
+                            margin: 0 7px
+                            height: 60px
+                            align-items: center
+                            margin-top: 8px
+                            border-radius: 5px
+                            display: flex
+                            padding-left: 15px
+                            padding-right: 23px
+                            justify-content: space-between
+                            label
+                                cursor: pointer
+                                display: flex
+                                color: #261D31
+                                font-size: 15px
+                                font-weight: bold
+                                font-family: 'Poppins', sans-serif
+                                align-items: center
+                                input
+                                    width: 15px
+                                    height: 15px
+                                    accent-color: #E7014B
+                                    margin-right: 11px
+                                
+        #order 
+            margin-top: 58px
+            background: #fff
+            padding-top: 25px
+            padding-bottom: 10px
+
+            .order-container 
+                .order-row 
+                    .order-col 
+                        .shop-list 
+                            flex-direction: column
+                            display: flex
+
+                            li 
+                                font-family: 'Poppins', sans-serif
+                                margin-bottom: 10px
+                                display: flex
+                                justify-content: space-between
+
+                                span 
+                                    padding-left: 15px
+                                    color: #261D31
+                                
+                                .total 
+                                    padding-right: 15px
+                                    font-weight: bold
+                                
+                            
+                        
+
+                        .shop-bottom 
+                            display: flex
+                            border-top: 2px dotted #261D31
+                            flex-direction: column
+
+                            li 
+                                padding-top: 20px
+                                font-family: 'Poppins', sans-serif
+                                display: flex
+                                justify-content: space-between
+                                font-weight: bold
+
+                                span 
+                                    padding-left: 15px
+
+                                    &:last-child 
+                                        padding-right: 15px
+                                        color: #E7014B
+                                    
+                            
+                            
+
+                            ul 
+                                li 
+                                    font-family: 'Poppins', sans-serif
+
+                                    .back 
+                                        background: #fef2f6
+                                        color: #E7014B
+                                        border-radius: 5px
+                                        width: 170px
+                                        font-weight: bold
+                                        padding: 10px 0
+                                    
+
+                                    .order-now 
+                                        background: #E7014B
+                                        color: #fff
+                                        border-radius: 5px
+                                        width: 170px
+                                        padding: 10px 0
+                                        font-weight: bold
+                                    
+    footer 
+        margin-top: 25px
+
+        .footer-container 
+            .footer-row 
+                .footer-col 
+                    .footer-item 
+                        background: #fff
+                        padding-top: 35px
+                        padding-bottom: 10px
+                        display: flex
+                        justify-content: center
+                        flex-direction: column
+                        align-items: center
+
+                        img 
+                            width: max-content
+                        
+
+                        ul 
+                            display: flex
+                            margin: 29px 0
+
+                            li 
+                                margin-right: 8px
+                                background: #F8F8F8
+                                padding: 16px 61px
+
+                                a 
+                                    font-family: 'Poppins', sans-serif
+                                    color: #261D31
+                                    font-size: 19px
+                                
+
+                                &:last-child 
+                                    margin-right: 0
+                                
+                            
+                        
+
+                        p 
+                            font-size: 18px
+                            font-weight: 500
+                            color: #261D31
+                        
+        
+//Responsive
+
+@media only screen and (max-width:768px) 
+    body 
+        .header 
+            .header-container 
+                .header-row 
+                    .header-left 
+                        a 
+                        img 
+                            height: 45px !important
+                        
+                        span 
+                            display: none
+                    
+                    
+                
+
+                    .header-right 
+                        .nav-list 
+                            li 
+                                padding: 8px 15px !important
+
+                                a 
+                                    font-size: 12px
+                                    
+        .shopping-header 
+            .shop-container 
+                .shop-row
+                    .shop-col 
+                        ul 
+                            li 
+                                a 
+                                    img 
+                                        height: 40px
+       
+        main
+            #payment 
+                .payment-container 
+                    .payment-title 
+                      font-size: 16px
+
+            #order
+                .order-container 
+                    .order-row 
+                        .order-col 
+                            .shop-list 
+                                li 
+                                font-size: 12px
+                            
+                        
+                        .shop-bottom 
+                            ul 
+                                li 
+                                    font-size: 12px
+
+                                    button 
+                                        font-size: 16px
+
+            #banner 
+                .banner-container 
+                    .swiper 
+                        .swiper-pagination-bullet 
+                            width: 10px
+                            height: 10px
+                        
+
+                        .swiper-pagination-bullet-active 
+                            width: 10px
+                            height: 10px
+                        
+
+                        .swiper-pagination 
+                            background: #fff
+                            padding: 0px 4px
+                            border-radius: 60px
+                            width: max-content !important
+                        
+
+                        .swiper-wrapper 
+                            padding-bottom: 50px !important
+                        
+            .category-article 
+                .container 
+                    .category-title 
+                        font-size: 20px
+
+            .trend-article 
+                .container 
+                    .trend-title 
+                        font-size: 20px
+                        margin-bottom: 16px
+
+            #trend 
+                .trend-container 
+                    .shop-title 
+                        font-size: 16px 
+                    .trend-row 
+                        .trend-col 
+                            .trend-item 
+                                padding-right: 20px
+                                padding-top: 8px
+                                padding-bottom: 8px
+                                padding-left: 13px
+                                margin-bottom: 5px
+                                
+                                div
+                                    &:first-child
+                                        img
+                                            width: 86px
+                                            height: 86px
+
+                                .dec-bottom
+                                    .img-title 
+                                        font-size: 12px 
+                                
+                                    .trend-number 
+                                        font-size: 11px  !important
+                                
+                                    .trend-money 
+                                        font-size: 16px  !important
+                                
+                                    
+                           
+            .modal 
+                .modal-container 
+                    width: 404px
+        
+        footer 
+            margin-top: 25px
+            .footer-container 
+                .footer-row 
+                    .footer-col 
+                        .footer-item 
+                            padding-top: 18px
+
+                            p 
+                                margin-bottom: 10px
+                            
+
+                            ul 
+                                margin-bottom: 12px
+                                margin-top: 19px
+
+                                li 
+                                    padding: 7px 25px
+
+                                    a 
+                                        font-size: 14px
+                                    
+                                
+                            
+
+                            p 
+                                font-size: 12px
+                
+@media only screen and (max-width:478px) 
+    body 
+        main 
+            .payment-bg
+                label
+                    font-size: 13px !important
+
+            .nav-list 
+
+                a 
+                    font-size: 14px !important
+                    &.active
+                        &::after
+                            left: 40px !important
+                
+            .category-article 
+                .container 
+                    .category-title 
+                        font-size: 13px
+                    
+            .trend-article 
+                .container 
+                    .trend-title 
+                        font-size: 13px
+
+            .modal 
+                .modal-container 
+                    width: 350px
+
+                    .modal-bottom 
+                        .modal-size 
+                            ul 
+                                li 
+                                    button 
+                                        padding: 5px 23px
+                                    
+        footer 
+            background: #fff
+            margin-top: 148px
+
+            .footer-container 
+                .footer-col 
+                    .footer-item 
+                        img 
+                            height: 53px
